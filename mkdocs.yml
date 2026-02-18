@@ -3,5 +3,6 @@ site_name: IAW-ARY
 nav:
     - Principal: index.md
     - Acerca de: about.md
+    - Práctica 1.1: practica1.md
 
 theme: material
