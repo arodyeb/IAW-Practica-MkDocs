@@ -2,7 +2,74 @@ site_name: IAW-ARY
 
 nav:
     - Principal: index.md
-    - Acerca de: about.md
-    - Práctica 1.1: practica1.md
+    - Práctica 1: practica1.md
+    - Práctica 2: practica2.md
 
 theme: material
+
+site_name: IAW - Prácticas ASIR
+site_description: Prácticas de Implantación de Aplicaciones Web - 2º ASIR
+site_author: Aitor Rodríguez Yebra
+site_url: https://arodyeb.github.io/
+
+repo_name: arodyeb/arodyeb.github.io
+repo_url: https://github.com/arodyeb
+
+theme:
+  name: material
+  language: es
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: deep orange
+      toggle:
+        icon: material/weather-night
+        name: Cambiar a modo oscuro
+    - scheme: slate
+      primary: indigo
+      accent: deep orange
+      toggle:
+        icon: material/weather-sunny
+        name: Cambiar a modo claro
+
+  font:
+    text: Roboto
+    code: Roboto Mono
+
+  features:
+    - navigation.tabs
+    - navigation.top
+    - navigation.sections
+    - navigation.expand
+    - search.highlight
+    - search.suggest
+    - content.code.copy
+    - content.action.edit
+    - content.tabs.link
+
+nav:
+  - Inicio: index.md
+  - Práctica 1 - LAMP en AWS: practica1.md
+  - Práctica 5.4 - Docker: practica2.md
+
+markdown_extensions:
+  - admonition
+  - codehilite
+  - toc:
+      permalink: true
+  - pymdownx.superfences
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+
+plugins:
+  - search
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/arodyeb

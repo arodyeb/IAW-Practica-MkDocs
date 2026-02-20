@@ -245,12 +245,12 @@ Una vez configurados los scripts de instalación, ejecutar primero el script de 
 ```bash
 sudo ./install_lamp.sh
 ```
-![](screenshots/screen1.png)
-![](screenshots/screen2.png)
+![](imagenes-p1/imagen1.png)
+![](imagenes-p1/imagen2.png)
 
 Y una vez comprobado que el script se ha ejecutado correctamente, ejecutamos el script de herramientas y comprobamos que también se haga sin errores
 ```bash
 sudo ./install_tools.sh
 ```
-![](screenshots/screen3.png)
-![](screenshots/screen4.png)
+![](imagenes-p1/imagen3.png)
+![](imagenes-p1/imagen4.png)
