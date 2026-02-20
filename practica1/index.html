@@ -1,16 +1,24 @@
 
 <!doctype html>
-<html lang="en" class="no-js">
+<html lang="es" class="no-js">
   <head>
     
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
+        <meta name="description" content="Prácticas de Implantación de Aplicaciones Web - 2º ASIR">
       
       
+        <meta name="author" content="Aitor Rodríguez Yebra">
       
-        <link rel="prev" href="../about/">
       
+        <link rel="canonical" href="https://arodyeb.github.io/practica1/">
+      
+      
+        <link rel="prev" href="..">
+      
+      
+        <link rel="next" href="../practica2/">
       
       
         
@@ -21,11 +29,14 @@
     
     
       
-        <title>Práctica 1.1 - IAW-ARY</title>
+        <title>Práctica 1 - LAMP en AWS - IAW - Prácticas ASIR</title>
       
     
     
       <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -53,7 +64,14 @@
   </head>
   
   
-    <body dir="ltr">
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="deep-orange">
   
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
@@ -63,7 +81,7 @@
       
         
         <a href="#iaw-practica-11" class="md-skip">
-          Skip to content
+          Saltar a contenido
         </a>
       
     </div>
@@ -74,11 +92,9 @@
     
       
 
-  
-
-<header class="md-header md-header--shadow" data-md-component="header">
-  <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="IAW-ARY" class="md-header__button md-logo" aria-label="IAW-ARY" data-md-component="logo">
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href=".." title="IAW - Prácticas ASIR" class="md-header__button md-logo" aria-label="IAW - Prácticas ASIR" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -92,18 +108,44 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            IAW-ARY
+            IAW - Prácticas ASIR
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Práctica 1.1
+              Práctica 1 - LAMP en AWS
             
           </span>
         </div>
       </div>
     </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="deep-orange"  aria-label="Cambiar a modo oscuro"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Cambiar a modo oscuro" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="deep-orange"  aria-label="Cambiar a modo claro"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Cambiar a modo claro" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
     
     
       <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
@@ -120,27 +162,29 @@
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
         
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
         
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
       </label>
-      <nav class="md-search__options" aria-label="Search">
+      <nav class="md-search__options" aria-label="Buscar">
         
-        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
           
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
         </button>
       </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
       
     </form>
     <div class="md-search__output">
       <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
         <div class="md-search-result" data-md-component="search-result">
           <div class="md-search-result__meta">
-            Initializing search
+            Inicializando búsqueda
           </div>
           <ol class="md-search-result__list" role="presentation"></ol>
         </div>
@@ -151,6 +195,18 @@
       
     
     
+      <div class="md-header__source">
+        <a href="https://github.com/arodyeb" title="Ir al repositorio" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    arodyeb/arodyeb.github.io
+  </div>
+</a>
+      </div>
+    
   </nav>
   
 </header>
@@ -159,6 +215,74 @@
       
       
         
+          
+            
+<nav class="md-tabs" aria-label="Pestañas" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Inicio
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Práctica 1 - LAMP en AWS
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../practica2/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Práctica 5.4 - Docker
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
           
         
       
@@ -173,17 +297,31 @@
                     
 
 
+  
 
-<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navegación" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="IAW-ARY" class="md-nav__button md-logo" aria-label="IAW-ARY" data-md-component="logo">
+    <a href=".." title="IAW - Prácticas ASIR" class="md-nav__button md-logo" aria-label="IAW - Prácticas ASIR" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
 
     </a>
-    IAW-ARY
+    IAW - Prácticas ASIR
   </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/arodyeb" title="Ir al repositorio" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    arodyeb/arodyeb.github.io
+  </div>
+</a>
+    </div>
   
   <ul class="md-nav__list" data-md-scrollfix>
     
@@ -201,34 +339,7 @@
   <span class="md-ellipsis">
     
   
-    Principal
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../about/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Acerca de
+    Inicio
   
 
     
@@ -264,7 +375,7 @@
   <span class="md-ellipsis">
     
   
-    Práctica 1.1
+    Práctica 1 - LAMP en AWS
   
 
     
@@ -282,7 +393,7 @@
   <span class="md-ellipsis">
     
   
-    Práctica 1.1
+    Práctica 1 - LAMP en AWS
   
 
     
@@ -294,7 +405,7 @@
       
         
 
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
   
   
   
@@ -303,7 +414,7 @@
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
-      Table of contents
+      Tabla de contenidos
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
@@ -365,6 +476,33 @@
   
 
     
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../practica2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Práctica 5.4 - Docker
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -378,7 +516,7 @@
                   <div class="md-sidebar__inner">
                     
 
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
   
   
   
@@ -387,7 +525,7 @@
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
-      Table of contents
+      Tabla de contenidos
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
@@ -457,217 +595,225 @@
                   
 
 
+  
+    <a href="https://github.com/arodyeb/edit/master/docs/practica1.md" title="Editar esta página" class="md-content__button md-icon" rel="edit">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+    </a>
+  
+  
 
-<h1 id="iaw-practica-11">IAW - Práctica 1.1</h1>
-<h2 id="instalacion-de-la-pila-lamp-en-una-instancia-ec2-de-aws-con-ubuntu-server">Instalación de la pila LAMP en una instancia EC2 de AWS con Ubuntu Server</h2>
-<h3 id="preparacion-de-la-estructura-de-directorios">Preparación de la estructura de directorios</h3>
+
+<h1 id="iaw-practica-11">IAW - Práctica 1.1<a class="headerlink" href="#iaw-practica-11" title="Permanent link">&para;</a></h1>
+<h2 id="instalacion-de-la-pila-lamp-en-una-instancia-ec2-de-aws-con-ubuntu-server">Instalación de la pila LAMP en una instancia EC2 de AWS con Ubuntu Server<a class="headerlink" href="#instalacion-de-la-pila-lamp-en-una-instancia-ec2-de-aws-con-ubuntu-server" title="Permanent link">&para;</a></h2>
+<h3 id="preparacion-de-la-estructura-de-directorios">Preparación de la estructura de directorios<a class="headerlink" href="#preparacion-de-la-estructura-de-directorios" title="Permanent link">&para;</a></h3>
 <p>Clonamos el repositorio que hemos creado para la práctica previamente en GitHub en nuestra carpeta personal</p>
-<pre><code class="language-bash">mkdir ~/repositorios/
-
-cd ~/repositorios/
-
-git clone https://github.com/arodyeb/IAW-Practica1.1.git
-</code></pre>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>mkdir<span class="w"> </span>~/repositorios/
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="nb">cd</span><span class="w"> </span>~/repositorios/
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/arodyeb/IAW-Practica1.1.git
+</code></pre></div>
 <p>Creamos las carpetas conf, htaccess, php y scripts en el directorio raíz del repositorio, donde guardaremos los archivos necesarios para configurar la instalación de la pila LAMP</p>
-<pre><code class="language-bash">mkdir conf htaccess php scripts
-</code></pre>
-<h3 id="definicion-de-variables-en-archivo-env">Definición de variables en archivo .env</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>mkdir<span class="w"> </span>conf<span class="w"> </span>htaccess<span class="w"> </span>php<span class="w"> </span>scripts
+</code></pre></div>
+<h3 id="definicion-de-variables-en-archivo-env">Definición de variables en archivo .env<a class="headerlink" href="#definicion-de-variables-en-archivo-env" title="Permanent link">&para;</a></h3>
 <p>Es necesario crear un archivo .env en el directorio de scripts con valores para una serie de variables que serán usadas posteriormente por los scripts de instalación.<br />
 Para evitar compartir el valor de dichas variables y que sea personalizable, en su lugar se comparte un archivo como plantilla que se ha de personalizar y renombrar.  </p>
-<h3 id="configuracion-de-install_lampsh">Configuración de "install_lamp.sh"</h3>
+<h3 id="configuracion-de-install_lampsh">Configuración de "install_lamp.sh"<a class="headerlink" href="#configuracion-de-install_lampsh" title="Permanent link">&para;</a></h3>
 <p>En la carpeta de scripts, creamos el archivo "install_lamp.sh"</p>
-<pre><code class="language-bash">cd scripts/
-sudo nano install_lamp.sh
-</code></pre>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nb">cd</span><span class="w"> </span>scripts/
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>sudo<span class="w"> </span>nano<span class="w"> </span>install_lamp.sh
+</code></pre></div>
 <p>Configuramos el script para que se detenga si ocurre algún error y además muestre los comandos por pantalla</p>
-<pre><code class="language-bash">#!/bin/bash
-
-set -ex
-</code></pre>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="ch">#!/bin/bash</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="nb">set</span><span class="w"> </span>-ex
+</code></pre></div>
 <p>Actualizamos repositorios</p>
-<pre><code class="language-bash">apt update
-
-apt upgrade -y
-</code></pre>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>apt<span class="w"> </span>update
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>apt<span class="w"> </span>upgrade<span class="w"> </span>-y
+</code></pre></div>
 <p>Instalamos Apache, habilitamos el módulo rewrite y copiamos el archivo de configuración personalizado</p>
-<pre><code class="language-bash">apt install apache2 -y
-
-a2enmod rewrite
-
-cp ../conf/000-default.conf /etc/apache2/sites-available
-</code></pre>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>apt<span class="w"> </span>install<span class="w"> </span>apache2<span class="w"> </span>-y
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>a2enmod<span class="w"> </span>rewrite
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>cp<span class="w"> </span>../conf/000-default.conf<span class="w"> </span>/etc/apache2/sites-available
+</code></pre></div>
 <p>Instalamos PHP, el módulo de ejecución de scripts PHP de Apache y la extensión de conexión entre PHP y MySQL</p>
-<pre><code class="language-bash">apt install php libapache2-mod-php php-mysql -y
-</code></pre>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>apt<span class="w"> </span>install<span class="w"> </span>php<span class="w"> </span>libapache2-mod-php<span class="w"> </span>php-mysql<span class="w"> </span>-y
+</code></pre></div>
 <p>Reiniciamos Apache para llevar a cabo los cambios y copiamos el archivo index</p>
-<pre><code class="language-bash">systemctl restart apache2
-
-cp ../php/index.php /var/www/html/
-</code></pre>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>systemctl<span class="w"> </span>restart<span class="w"> </span>apache2
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>cp<span class="w"> </span>../php/index.php<span class="w"> </span>/var/www/html/
+</code></pre></div>
 <p>Instalamos MySQL y damos permisos sobre los archivos del sitio web al usuario y grupo de Apache  </p>
-<pre><code class="language-bash">apt install mysql-server -y
-
-chown -R www-data:www-data /var/www/html/*
-</code></pre>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>apt<span class="w"> </span>install<span class="w"> </span>mysql-server<span class="w"> </span>-y
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>chown<span class="w"> </span>-R<span class="w"> </span>www-data:www-data<span class="w"> </span>/var/www/html/*
+</code></pre></div>
 <p>Instalamos MySQL y damos permisos sobre los archivos del sitio web al usuario y grupo de Apache</p>
-<pre><code class="language-bash">apt install mysql-server -y
-
-chown -R www-data:www-data /var/www/html/*
-</code></pre>
-<p>El contenido del script debe ser tal que así:  </p>
-<pre><code class="language-bash">#!/bin/bash
-
-#Configuramos el script para que se detenga si ocurre algún error y además muestre los comandos por pantalla
-
-set -ex
-
-#Actualizamos repositorios
-
-apt update
-
-apt upgrade -y
-
-#Instalamos Apache, habilitamos el módulo rewrite y copiamos el archivo de configuración personalizado
-
-apt install apache2 -y
-
-a2enmod rewrite
-
-cp ../conf/000-default.conf /etc/apache2/sites-available
-
-#Instalamos PHP, el módulo de ejecución de scripts PHP de Apache y la extensión de conexión entre PHP y MySQL
-
-apt install php libapache2-mod-php php-mysql -y
-
-#Reiniciamos Apache para llevar a cabo los cambios y copiamos el archivo index
-
-systemctl restart apache2
-
-cp ../php/index.php /var/www/html/
-
-#Instalamos MySQL y damos permisos sobre los archivos del sitio web al usuario y grupo de Apache  
-
-apt install mysql-server -y
-
-chown -R www-data:www-data /var/www/html/*
-
-#Instalamos MySQL y damos permisos sobre los archivos del sitio web al usuario y grupo de Apache
-
-apt install mysql-server -y
-
-chown -R www-data:www-data /var/www/html/*
-</code></pre>
-<p>Al guardar el script de instalación de la pila LAMP, le damos permisos de ejecución:</p>
-<pre><code class="language-bash">sudo chmod +x install_lamp.sh
-</code></pre>
-<p>Creamos un archivo .env:</p>
-<pre><code class="language-bash">sudo nano .env
-</code></pre>
-<p>En este archivo se deben personalizar una serie de variables a las que luego se hará referencia en otro script:</p>
-<pre><code>PHPMYADMIN_APP_PASSWORD=tu_password_phpmyadmin
-DB_NAME=nombre_base
-DB_USER=usuario_base
-DB_PASSWORD=password_base
-STATS_USERNAME=usuario_stats
-STATS_PASSWORD=password_stats
-home=/home/tu_usuario
-</code></pre>
-<p>Creamos el script "install_tools.sh":</p>
-<pre><code class="language-bash">sudo nano install_tools.sh
-</code></pre>
-<p>Configuramos el script:</p>
-<pre><code class="language-bash">#!/bin/bash
-
-# Configuramos el script para que se detenga si ocurre algún error y además muestre los comandos por pantalla
-
-set -ex
-
-# Importamos el archivo .env
-
-source .env
-
-# Configuramos las respuestas de la instalación de phpmyadmin
-
-echo &quot;phpmyadmin phpmyadmin/reconfigure-webserver multiselect apache2&quot; | debconf-set-selections
-
-echo &quot;phpmyadmin phpmyadmin/dbconfig-install boolean true&quot; | debconf-set-selections
-
-echo &quot;phpmyadmin phpmyadmin/mysql/app-pass password $PHPMYADMIN_APP_PASSWORD&quot; | debconf-set-selections
-
-echo &quot;phpmyadmin phpmyadmin/app-password-confirm password $PHPMYADMIN_APP_PASSWORD&quot; | debconf-set-selections
-
-# Actualizamos repositorios
-
-apt update
-
-# Instalamos phpmyadmin
-
-sudo apt install phpmyadmin php-mbstring php-zip php-gd php-json php-curl -y
-
-# Creamos una carpeta para AdMiner y lo instalamos
-
-mkdir -p /var/www/html/adminer
-
-wget https://github.com/vrana/adminer/releases/download/v5.4.1/adminer-5.4.1-mysql.php -P /var/www/html/adminer/
-
-mv /var/www/html/adminer/adminer-5.4.1-mysql.php /var/www/html/adminer/index.php
-
-
-# Creamos una base de datos para comprobar que funciona
-
-mysql -u root -e &quot;DROP  DATABASE IF EXISTS $DB_NAME&quot;
-
-mysql -u root -e &quot;CREATE DATABASE $DB_NAME&quot;
-
-# Creamos un usuario
-
-mysql -u root -e &quot;DROP USER IF EXISTS $DB_USER@'%';&quot;
-
-mysql -u root -e &quot;CREATE USER '$DB_USER'@'%' IDENTIFIED BY '$DB_PASSWORD';&quot;
-
-# Damos permisos al usuario sobre la base de datos
-
-mysql -u root -e &quot;GRANT ALL PRIVILEGES ON $DB_NAME.* TO $DB_USER@'%';&quot;
-
-# Instalamos GoAccess
-
-sudo apt install goaccess -y
-
-# Creamos la carpeta stats en el directorio de Apache
-
-mkdir -p /var/www/html/stats
-
-# Creamos la carpeta htaccess en el home del usuario
-
-mkdir -p $home/htaccess
-
-goaccess /var/log/apache2/access.log -o /var/www/html/stats/index.html --log-format=COMBINED --real-time-html --daemonize
-
-cp ../conf/000-default-stats.conf /etc/apache2/sites-available/000-default.conf
-
-sudo htpasswd -bc /etc/apache2/.htpasswd $STATS_USERNAME $STATS_PASSWORD
-
-# Copiamos el archivo htaccess
-
-cp ../htaccess/.htaccess /var/www/html/stats
-
-# Y reiniciamos Apache
-
-systemctl restart apache2
-</code></pre>
-<p>Al terminar de configurar el script, guardamos los cambios y le damos permisos de ejecución:</p>
-<pre><code class="language-bash">sudo chmod +x install_tools.sh
-</code></pre>
-<p>Una vez configurados los scripts de instalación, ejecutar primero el script de la pila Lamp</p>
-<pre><code class="language-bash">sudo ./install_lamp.sh
-</code></pre>
-<p><img alt="" src="../screenshots/screen1.png" />
-<img alt="" src="../screenshots/screen2.png" /></p>
-<p>Y una vez comprobado que el script se ha ejecutado correctamente, ejecutamos el script de herramientas y comprobamos que también se haga sin errores</p>
-<pre><code class="language-bash">sudo ./install_tools.sh
-</code></pre>
-<p><img alt="" src="../screenshots/screen3.png" />
-<img alt="" src="../screenshots/screen4.png" /></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>apt<span class="w"> </span>install<span class="w"> </span>mysql-server<span class="w"> </span>-y
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>chown<span class="w"> </span>-R<span class="w"> </span>www-data:www-data<span class="w"> </span>/var/www/html/*
+</code></pre></div>
+<p>El contenido del script debe ser tal que así:<br />
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="ch">#!/bin/bash</span>
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>
+<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a><span class="c1">#Configuramos el script para que se detenga si ocurre algún error y además muestre los comandos por pantalla</span>
+<a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>
+<a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a><span class="nb">set</span><span class="w"> </span>-ex
+<a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a>
+<a id="__codelineno-10-7" name="__codelineno-10-7" href="#__codelineno-10-7"></a><span class="c1">#Actualizamos repositorios</span>
+<a id="__codelineno-10-8" name="__codelineno-10-8" href="#__codelineno-10-8"></a>
+<a id="__codelineno-10-9" name="__codelineno-10-9" href="#__codelineno-10-9"></a>apt<span class="w"> </span>update
+<a id="__codelineno-10-10" name="__codelineno-10-10" href="#__codelineno-10-10"></a>
+<a id="__codelineno-10-11" name="__codelineno-10-11" href="#__codelineno-10-11"></a>apt<span class="w"> </span>upgrade<span class="w"> </span>-y
+<a id="__codelineno-10-12" name="__codelineno-10-12" href="#__codelineno-10-12"></a>
+<a id="__codelineno-10-13" name="__codelineno-10-13" href="#__codelineno-10-13"></a><span class="c1">#Instalamos Apache, habilitamos el módulo rewrite y copiamos el archivo de configuración personalizado</span>
+<a id="__codelineno-10-14" name="__codelineno-10-14" href="#__codelineno-10-14"></a>
+<a id="__codelineno-10-15" name="__codelineno-10-15" href="#__codelineno-10-15"></a>apt<span class="w"> </span>install<span class="w"> </span>apache2<span class="w"> </span>-y
+<a id="__codelineno-10-16" name="__codelineno-10-16" href="#__codelineno-10-16"></a>
+<a id="__codelineno-10-17" name="__codelineno-10-17" href="#__codelineno-10-17"></a>a2enmod<span class="w"> </span>rewrite
+<a id="__codelineno-10-18" name="__codelineno-10-18" href="#__codelineno-10-18"></a>
+<a id="__codelineno-10-19" name="__codelineno-10-19" href="#__codelineno-10-19"></a>cp<span class="w"> </span>../conf/000-default.conf<span class="w"> </span>/etc/apache2/sites-available
+<a id="__codelineno-10-20" name="__codelineno-10-20" href="#__codelineno-10-20"></a>
+<a id="__codelineno-10-21" name="__codelineno-10-21" href="#__codelineno-10-21"></a><span class="c1">#Instalamos PHP, el módulo de ejecución de scripts PHP de Apache y la extensión de conexión entre PHP y MySQL</span>
+<a id="__codelineno-10-22" name="__codelineno-10-22" href="#__codelineno-10-22"></a>
+<a id="__codelineno-10-23" name="__codelineno-10-23" href="#__codelineno-10-23"></a>apt<span class="w"> </span>install<span class="w"> </span>php<span class="w"> </span>libapache2-mod-php<span class="w"> </span>php-mysql<span class="w"> </span>-y
+<a id="__codelineno-10-24" name="__codelineno-10-24" href="#__codelineno-10-24"></a>
+<a id="__codelineno-10-25" name="__codelineno-10-25" href="#__codelineno-10-25"></a><span class="c1">#Reiniciamos Apache para llevar a cabo los cambios y copiamos el archivo index</span>
+<a id="__codelineno-10-26" name="__codelineno-10-26" href="#__codelineno-10-26"></a>
+<a id="__codelineno-10-27" name="__codelineno-10-27" href="#__codelineno-10-27"></a>systemctl<span class="w"> </span>restart<span class="w"> </span>apache2
+<a id="__codelineno-10-28" name="__codelineno-10-28" href="#__codelineno-10-28"></a>
+<a id="__codelineno-10-29" name="__codelineno-10-29" href="#__codelineno-10-29"></a>cp<span class="w"> </span>../php/index.php<span class="w"> </span>/var/www/html/
+<a id="__codelineno-10-30" name="__codelineno-10-30" href="#__codelineno-10-30"></a>
+<a id="__codelineno-10-31" name="__codelineno-10-31" href="#__codelineno-10-31"></a><span class="c1">#Instalamos MySQL y damos permisos sobre los archivos del sitio web al usuario y grupo de Apache  </span>
+<a id="__codelineno-10-32" name="__codelineno-10-32" href="#__codelineno-10-32"></a>
+<a id="__codelineno-10-33" name="__codelineno-10-33" href="#__codelineno-10-33"></a>apt<span class="w"> </span>install<span class="w"> </span>mysql-server<span class="w"> </span>-y
+<a id="__codelineno-10-34" name="__codelineno-10-34" href="#__codelineno-10-34"></a>
+<a id="__codelineno-10-35" name="__codelineno-10-35" href="#__codelineno-10-35"></a>chown<span class="w"> </span>-R<span class="w"> </span>www-data:www-data<span class="w"> </span>/var/www/html/*
+<a id="__codelineno-10-36" name="__codelineno-10-36" href="#__codelineno-10-36"></a>
+<a id="__codelineno-10-37" name="__codelineno-10-37" href="#__codelineno-10-37"></a><span class="c1">#Instalamos MySQL y damos permisos sobre los archivos del sitio web al usuario y grupo de Apache</span>
+<a id="__codelineno-10-38" name="__codelineno-10-38" href="#__codelineno-10-38"></a>
+<a id="__codelineno-10-39" name="__codelineno-10-39" href="#__codelineno-10-39"></a>apt<span class="w"> </span>install<span class="w"> </span>mysql-server<span class="w"> </span>-y
+<a id="__codelineno-10-40" name="__codelineno-10-40" href="#__codelineno-10-40"></a>
+<a id="__codelineno-10-41" name="__codelineno-10-41" href="#__codelineno-10-41"></a>chown<span class="w"> </span>-R<span class="w"> </span>www-data:www-data<span class="w"> </span>/var/www/html/*
+</code></pre></div>
+Al guardar el script de instalación de la pila LAMP, le damos permisos de ejecución:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>sudo<span class="w"> </span>chmod<span class="w"> </span>+x<span class="w"> </span>install_lamp.sh
+</code></pre></div>
+Creamos un archivo .env:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>sudo<span class="w"> </span>nano<span class="w"> </span>.env
+</code></pre></div>
+En este archivo se deben personalizar una serie de variables a las que luego se hará referencia en otro script:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>PHPMYADMIN_APP_PASSWORD=tu_password_phpmyadmin
+<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>DB_NAME=nombre_base
+<a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a>DB_USER=usuario_base
+<a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a>DB_PASSWORD=password_base
+<a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a>STATS_USERNAME=usuario_stats
+<a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a>STATS_PASSWORD=password_stats
+<a id="__codelineno-13-7" name="__codelineno-13-7" href="#__codelineno-13-7"></a>home=/home/tu_usuario
+</code></pre></div>
+Creamos el script "install_tools.sh":
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>sudo<span class="w"> </span>nano<span class="w"> </span>install_tools.sh
+</code></pre></div>
+Configuramos el script:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="ch">#!/bin/bash</span>
+<a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a>
+<a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a><span class="c1"># Configuramos el script para que se detenga si ocurre algún error y además muestre los comandos por pantalla</span>
+<a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a>
+<a id="__codelineno-15-5" name="__codelineno-15-5" href="#__codelineno-15-5"></a><span class="nb">set</span><span class="w"> </span>-ex
+<a id="__codelineno-15-6" name="__codelineno-15-6" href="#__codelineno-15-6"></a>
+<a id="__codelineno-15-7" name="__codelineno-15-7" href="#__codelineno-15-7"></a><span class="c1"># Importamos el archivo .env</span>
+<a id="__codelineno-15-8" name="__codelineno-15-8" href="#__codelineno-15-8"></a>
+<a id="__codelineno-15-9" name="__codelineno-15-9" href="#__codelineno-15-9"></a><span class="nb">source</span><span class="w"> </span>.env
+<a id="__codelineno-15-10" name="__codelineno-15-10" href="#__codelineno-15-10"></a>
+<a id="__codelineno-15-11" name="__codelineno-15-11" href="#__codelineno-15-11"></a><span class="c1"># Configuramos las respuestas de la instalación de phpmyadmin</span>
+<a id="__codelineno-15-12" name="__codelineno-15-12" href="#__codelineno-15-12"></a>
+<a id="__codelineno-15-13" name="__codelineno-15-13" href="#__codelineno-15-13"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;phpmyadmin phpmyadmin/reconfigure-webserver multiselect apache2&quot;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>debconf-set-selections
+<a id="__codelineno-15-14" name="__codelineno-15-14" href="#__codelineno-15-14"></a>
+<a id="__codelineno-15-15" name="__codelineno-15-15" href="#__codelineno-15-15"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;phpmyadmin phpmyadmin/dbconfig-install boolean true&quot;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>debconf-set-selections
+<a id="__codelineno-15-16" name="__codelineno-15-16" href="#__codelineno-15-16"></a>
+<a id="__codelineno-15-17" name="__codelineno-15-17" href="#__codelineno-15-17"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;phpmyadmin phpmyadmin/mysql/app-pass password </span><span class="nv">$PHPMYADMIN_APP_PASSWORD</span><span class="s2">&quot;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>debconf-set-selections
+<a id="__codelineno-15-18" name="__codelineno-15-18" href="#__codelineno-15-18"></a>
+<a id="__codelineno-15-19" name="__codelineno-15-19" href="#__codelineno-15-19"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;phpmyadmin phpmyadmin/app-password-confirm password </span><span class="nv">$PHPMYADMIN_APP_PASSWORD</span><span class="s2">&quot;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>debconf-set-selections
+<a id="__codelineno-15-20" name="__codelineno-15-20" href="#__codelineno-15-20"></a>
+<a id="__codelineno-15-21" name="__codelineno-15-21" href="#__codelineno-15-21"></a><span class="c1"># Actualizamos repositorios</span>
+<a id="__codelineno-15-22" name="__codelineno-15-22" href="#__codelineno-15-22"></a>
+<a id="__codelineno-15-23" name="__codelineno-15-23" href="#__codelineno-15-23"></a>apt<span class="w"> </span>update
+<a id="__codelineno-15-24" name="__codelineno-15-24" href="#__codelineno-15-24"></a>
+<a id="__codelineno-15-25" name="__codelineno-15-25" href="#__codelineno-15-25"></a><span class="c1"># Instalamos phpmyadmin</span>
+<a id="__codelineno-15-26" name="__codelineno-15-26" href="#__codelineno-15-26"></a>
+<a id="__codelineno-15-27" name="__codelineno-15-27" href="#__codelineno-15-27"></a>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>phpmyadmin<span class="w"> </span>php-mbstring<span class="w"> </span>php-zip<span class="w"> </span>php-gd<span class="w"> </span>php-json<span class="w"> </span>php-curl<span class="w"> </span>-y
+<a id="__codelineno-15-28" name="__codelineno-15-28" href="#__codelineno-15-28"></a>
+<a id="__codelineno-15-29" name="__codelineno-15-29" href="#__codelineno-15-29"></a><span class="c1"># Creamos una carpeta para AdMiner y lo instalamos</span>
+<a id="__codelineno-15-30" name="__codelineno-15-30" href="#__codelineno-15-30"></a>
+<a id="__codelineno-15-31" name="__codelineno-15-31" href="#__codelineno-15-31"></a>mkdir<span class="w"> </span>-p<span class="w"> </span>/var/www/html/adminer
+<a id="__codelineno-15-32" name="__codelineno-15-32" href="#__codelineno-15-32"></a>
+<a id="__codelineno-15-33" name="__codelineno-15-33" href="#__codelineno-15-33"></a>wget<span class="w"> </span>https://github.com/vrana/adminer/releases/download/v5.4.1/adminer-5.4.1-mysql.php<span class="w"> </span>-P<span class="w"> </span>/var/www/html/adminer/
+<a id="__codelineno-15-34" name="__codelineno-15-34" href="#__codelineno-15-34"></a>
+<a id="__codelineno-15-35" name="__codelineno-15-35" href="#__codelineno-15-35"></a>mv<span class="w"> </span>/var/www/html/adminer/adminer-5.4.1-mysql.php<span class="w"> </span>/var/www/html/adminer/index.php
+<a id="__codelineno-15-36" name="__codelineno-15-36" href="#__codelineno-15-36"></a>
+<a id="__codelineno-15-37" name="__codelineno-15-37" href="#__codelineno-15-37"></a>
+<a id="__codelineno-15-38" name="__codelineno-15-38" href="#__codelineno-15-38"></a><span class="c1"># Creamos una base de datos para comprobar que funciona</span>
+<a id="__codelineno-15-39" name="__codelineno-15-39" href="#__codelineno-15-39"></a>
+<a id="__codelineno-15-40" name="__codelineno-15-40" href="#__codelineno-15-40"></a>mysql<span class="w"> </span>-u<span class="w"> </span>root<span class="w"> </span>-e<span class="w"> </span><span class="s2">&quot;DROP  DATABASE IF EXISTS </span><span class="nv">$DB_NAME</span><span class="s2">&quot;</span>
+<a id="__codelineno-15-41" name="__codelineno-15-41" href="#__codelineno-15-41"></a>
+<a id="__codelineno-15-42" name="__codelineno-15-42" href="#__codelineno-15-42"></a>mysql<span class="w"> </span>-u<span class="w"> </span>root<span class="w"> </span>-e<span class="w"> </span><span class="s2">&quot;CREATE DATABASE </span><span class="nv">$DB_NAME</span><span class="s2">&quot;</span>
+<a id="__codelineno-15-43" name="__codelineno-15-43" href="#__codelineno-15-43"></a>
+<a id="__codelineno-15-44" name="__codelineno-15-44" href="#__codelineno-15-44"></a><span class="c1"># Creamos un usuario</span>
+<a id="__codelineno-15-45" name="__codelineno-15-45" href="#__codelineno-15-45"></a>
+<a id="__codelineno-15-46" name="__codelineno-15-46" href="#__codelineno-15-46"></a>mysql<span class="w"> </span>-u<span class="w"> </span>root<span class="w"> </span>-e<span class="w"> </span><span class="s2">&quot;DROP USER IF EXISTS </span><span class="nv">$DB_USER</span><span class="s2">@&#39;%&#39;;&quot;</span>
+<a id="__codelineno-15-47" name="__codelineno-15-47" href="#__codelineno-15-47"></a>
+<a id="__codelineno-15-48" name="__codelineno-15-48" href="#__codelineno-15-48"></a>mysql<span class="w"> </span>-u<span class="w"> </span>root<span class="w"> </span>-e<span class="w"> </span><span class="s2">&quot;CREATE USER &#39;</span><span class="nv">$DB_USER</span><span class="s2">&#39;@&#39;%&#39; IDENTIFIED BY &#39;</span><span class="nv">$DB_PASSWORD</span><span class="s2">&#39;;&quot;</span>
+<a id="__codelineno-15-49" name="__codelineno-15-49" href="#__codelineno-15-49"></a>
+<a id="__codelineno-15-50" name="__codelineno-15-50" href="#__codelineno-15-50"></a><span class="c1"># Damos permisos al usuario sobre la base de datos</span>
+<a id="__codelineno-15-51" name="__codelineno-15-51" href="#__codelineno-15-51"></a>
+<a id="__codelineno-15-52" name="__codelineno-15-52" href="#__codelineno-15-52"></a>mysql<span class="w"> </span>-u<span class="w"> </span>root<span class="w"> </span>-e<span class="w"> </span><span class="s2">&quot;GRANT ALL PRIVILEGES ON </span><span class="nv">$DB_NAME</span><span class="s2">.* TO </span><span class="nv">$DB_USER</span><span class="s2">@&#39;%&#39;;&quot;</span>
+<a id="__codelineno-15-53" name="__codelineno-15-53" href="#__codelineno-15-53"></a>
+<a id="__codelineno-15-54" name="__codelineno-15-54" href="#__codelineno-15-54"></a><span class="c1"># Instalamos GoAccess</span>
+<a id="__codelineno-15-55" name="__codelineno-15-55" href="#__codelineno-15-55"></a>
+<a id="__codelineno-15-56" name="__codelineno-15-56" href="#__codelineno-15-56"></a>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>goaccess<span class="w"> </span>-y
+<a id="__codelineno-15-57" name="__codelineno-15-57" href="#__codelineno-15-57"></a>
+<a id="__codelineno-15-58" name="__codelineno-15-58" href="#__codelineno-15-58"></a><span class="c1"># Creamos la carpeta stats en el directorio de Apache</span>
+<a id="__codelineno-15-59" name="__codelineno-15-59" href="#__codelineno-15-59"></a>
+<a id="__codelineno-15-60" name="__codelineno-15-60" href="#__codelineno-15-60"></a>mkdir<span class="w"> </span>-p<span class="w"> </span>/var/www/html/stats
+<a id="__codelineno-15-61" name="__codelineno-15-61" href="#__codelineno-15-61"></a>
+<a id="__codelineno-15-62" name="__codelineno-15-62" href="#__codelineno-15-62"></a><span class="c1"># Creamos la carpeta htaccess en el home del usuario</span>
+<a id="__codelineno-15-63" name="__codelineno-15-63" href="#__codelineno-15-63"></a>
+<a id="__codelineno-15-64" name="__codelineno-15-64" href="#__codelineno-15-64"></a>mkdir<span class="w"> </span>-p<span class="w"> </span><span class="nv">$home</span>/htaccess
+<a id="__codelineno-15-65" name="__codelineno-15-65" href="#__codelineno-15-65"></a>
+<a id="__codelineno-15-66" name="__codelineno-15-66" href="#__codelineno-15-66"></a>goaccess<span class="w"> </span>/var/log/apache2/access.log<span class="w"> </span>-o<span class="w"> </span>/var/www/html/stats/index.html<span class="w"> </span>--log-format<span class="o">=</span>COMBINED<span class="w"> </span>--real-time-html<span class="w"> </span>--daemonize
+<a id="__codelineno-15-67" name="__codelineno-15-67" href="#__codelineno-15-67"></a>
+<a id="__codelineno-15-68" name="__codelineno-15-68" href="#__codelineno-15-68"></a>cp<span class="w"> </span>../conf/000-default-stats.conf<span class="w"> </span>/etc/apache2/sites-available/000-default.conf
+<a id="__codelineno-15-69" name="__codelineno-15-69" href="#__codelineno-15-69"></a>
+<a id="__codelineno-15-70" name="__codelineno-15-70" href="#__codelineno-15-70"></a>sudo<span class="w"> </span>htpasswd<span class="w"> </span>-bc<span class="w"> </span>/etc/apache2/.htpasswd<span class="w"> </span><span class="nv">$STATS_USERNAME</span><span class="w"> </span><span class="nv">$STATS_PASSWORD</span>
+<a id="__codelineno-15-71" name="__codelineno-15-71" href="#__codelineno-15-71"></a>
+<a id="__codelineno-15-72" name="__codelineno-15-72" href="#__codelineno-15-72"></a><span class="c1"># Copiamos el archivo htaccess</span>
+<a id="__codelineno-15-73" name="__codelineno-15-73" href="#__codelineno-15-73"></a>
+<a id="__codelineno-15-74" name="__codelineno-15-74" href="#__codelineno-15-74"></a>cp<span class="w"> </span>../htaccess/.htaccess<span class="w"> </span>/var/www/html/stats
+<a id="__codelineno-15-75" name="__codelineno-15-75" href="#__codelineno-15-75"></a>
+<a id="__codelineno-15-76" name="__codelineno-15-76" href="#__codelineno-15-76"></a><span class="c1"># Y reiniciamos Apache</span>
+<a id="__codelineno-15-77" name="__codelineno-15-77" href="#__codelineno-15-77"></a>
+<a id="__codelineno-15-78" name="__codelineno-15-78" href="#__codelineno-15-78"></a>systemctl<span class="w"> </span>restart<span class="w"> </span>apache2
+</code></pre></div>
+Al terminar de configurar el script, guardamos los cambios y le damos permisos de ejecución:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>sudo<span class="w"> </span>chmod<span class="w"> </span>+x<span class="w"> </span>install_tools.sh
+</code></pre></div>
+Una vez configurados los scripts de instalación, ejecutar primero el script de la pila Lamp
+<div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>sudo<span class="w"> </span>./install_lamp.sh
+</code></pre></div>
+<img alt="" src="../imagenes-p1/imagen1.png" />
+<img alt="" src="../imagenes-p1/imagen2.png" /></p>
+<p>Y una vez comprobado que el script se ha ejecutado correctamente, ejecutamos el script de herramientas y comprobamos que también se haga sin errores
+<div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>sudo<span class="w"> </span>./install_tools.sh
+</code></pre></div>
+<img alt="" src="../imagenes-p1/imagen3.png" />
+<img alt="" src="../imagenes-p1/imagen4.png" /></p>
 
 
 
@@ -685,8 +831,16 @@ systemctl restart apache2
             </div>
           
           
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Volver al principio
+</button>
         
       </main>
       
@@ -704,6 +858,22 @@ systemctl restart apache2
   
 </div>
       
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/arodyeb" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+</div>
+      
     </div>
   </div>
 </footer>
@@ -717,7 +887,7 @@ systemctl restart apache2
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": [], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.tabs", "navigation.top", "navigation.sections", "navigation.expand", "search.highlight", "search.suggest", "content.code.copy", "content.action.edit", "content.tabs.link"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
     
     
       <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
